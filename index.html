@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .winner{
+            color: green;
+        }
+        .loser{
+            color: red;
+        }
+    </style> 
+
+</head>
+<body>
+
+    <div class="container"> 
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+
+                    <div class="card-image">
+                        <figure class="image is=2by1">
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </figure>
+                    </div>
+
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        Ping-Pong score keeper
+                      </p>
+
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+
+                    <div class="card-content">
+                        <div class="content">
+                        <h1 class="title is-1"> <span id="p1display">0</span> to  <span id="p2display">0</span></h1>
+                        <p class="subtitle">Use the buttons below to keep score</p>
+                        
+                        <label for="playto" class="labes is-large is-inline"> playing to </label>
+                        
+                        <div class="select is-rounded">
+                            <select name="" id="playgames">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button class = "is-primary button card-footer-item" id="p1button"> +1 player one</button>
+                        <button class = "is-info button card-footer-item" id="p2button"> +1 player two</button>
+                        <button class = "is-danger button card-footer-item" id="reset">Reset</button>
+                    </footer>
+                  </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+    
+   
+
+    <script src="app.js"></script>
+</body>
+</html>
